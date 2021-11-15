@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- 言語は日本語を指定-->
+<html lang="ja">
+
+<head>
+    <!-- 文字コードはUTF-8を使用-->
+    <meta charset="utf-8">
+    <!--タイトルを入力-->
+    <title>Websoketを使用したチャット</title>
+    <!--おまじないの一種です---------------------------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <!------------------------------------------------------------------------------------->
+</head>
+
+<body>
+    <div class="container">
+        <!--見出しを入力する-->
+        <h1>Websocketを使用したチャット</h1>
+        <form class="form-message">
+            <div class="form-group">
+                <label form="message-form">メッセージ:</label>
+                <!--テキスト入力ボックスを設置する-->
+                <input type="text" class="form-control" id="message-form">
+            </div>
+            <!--送信ボタンを設置-->
+            <button type="submit">メッセージを送信</button>
+        </form>
+        <!--入力ログが以下にに出力される-->
+        <div id="chatlogs"></div>
+    </div>
+
+    <script type="text/javascript" src=./index.js></script>
+
+</body>
+
+</html>
